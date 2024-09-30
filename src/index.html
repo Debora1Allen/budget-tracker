@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="style.scss">
+</head>
+<body>
+  <header>
+    <h1>Budget Tracker</h1>
+  </header>
+
+  <main>
+    <section id="budget-info">
+      <h2>Your Budget</h2>
+      <label for="income">Enter your total income:</label>
+      <input type="number" id="income" placeholder="Income">
+      <button id="set-income-btn">Set Income</button>
+
+      <h3>Remaining Balance: $<span id="remaining-balance">0</span></h3>
+    </section>
+
+    <section id="expense-section">
+      <h2>Add Expenses</h2>
+      <label for="expense-name">Expense Name:</label>
+      <input type="text" id="expense-name" placeholder="Description">
+
+      <label for="expense-amount">Expense Amount:</label>
+      <input type="number" id="expense-amount" placeholder="Amount">
+
+      <button id="add-expense-btn">Add Expense</button>
+    </section>
+
+    <section id="expense-list">
+      <h2>Expense List</h2>
+      <ul id="expense-items"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Budget Tracker by ES6+ Project</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
